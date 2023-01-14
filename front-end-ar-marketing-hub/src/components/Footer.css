@@ -1,0 +1,164 @@
+.main-footer{
+
+    background: #003366;
+    color: white;
+    padding-top: 2rem;
+    font-family: Futura-Bold;
+    padding-bottom: 2.5rem;
+    margin-top: 2rem;
+
+}
+
+.list-unstyled{
+    font-family: Futura-medium;
+    font-size: 16px;
+    
+}
+
+h4{
+    padding-top: 1.5rem;
+    font-family: Futura-bold;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: #5BD7FE; 
+}
+
+.column-2 ul li{
+    margin-bottom: 6px;
+}
+
+.column-3 ul li{
+    margin-bottom: 6px;
+}
+
+.column-4 ul li{
+    margin-top: 10px;
+}
+
+/* .main-footer>.footer-middle>.container {
+    margin-bottom: 10px;
+
+} */
+
+.email{
+    font-family: Futura-light;
+    text-decoration: underline;
+}
+
+.phone{
+    font-family: Futura-light;
+}
+
+.phone-heading{
+    padding-top: 1rem;
+}
+
+.App-icon{
+    width: 100%;
+    height: 10vmin;
+    pointer-events: none;
+}
+
+.footer-bottom{
+    margin-left: -4rem;
+    margin-top: -30px;
+}
+
+.column-1{
+    margin-left: -4rem;
+    margin-right: 2rem;
+    
+}
+
+.column-2{
+    margin-left: 9rem;
+}
+
+.column-3{
+    margin-left: -4rem;
+}
+
+.column-4{
+    margin-right: -21rem;
+}
+
+.emailBox{
+    margin-left: -0.3rem;
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.subButton{
+    font-family: Futura-bold;
+    border: none;
+    background-color: #5BD7FE;
+    padding: 10px;
+    border-radius: 15px; 
+    cursor: pointer;
+    color: #003366;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    margin-left: -5px;
+}
+
+.subButton:hover{
+    background-color: white;
+    color:#003366;
+  }
+
+.subButton:active{
+background-color: #5BD7FE;
+color: #003366;
+transform: scale(0.98);
+/* Scaling button to 0.98 to its original size */
+/* Lowering the shadow */
+}
+
+.sm-heading{
+    padding-top: 2rem;
+    margin-bottom: -5px;
+}
+
+.column-4 ul a{
+    color: white;
+    font-size: 2rem;
+    margin-top: -20px;
+    margin-right: 10px;
+}
+
+.column-4 ul a:hover{
+    color: #5BD7FE;
+    font-size: 2rem;
+    margin-top: -20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.column-4 ul a:active{
+    color: white;
+    transform: scale(0.80);
+}
+
+.vl {
+    border-left: 1px solid #5BD7FE;
+    height: 19.5rem;
+    position: absolute;
+    /* left: 50%; */
+    margin-left: -4rem;
+    /* top: 0; */
+  }
+
+  .vl, .column-4{
+      display: inline;
+  }
+  
+    

@@ -1,0 +1,73 @@
+.buttonCon{
+display: flex;
+}
+
+.update-prod{
+
+    border: none;
+  background-color: #003366;
+  padding: 8px;
+  border-radius: 15px; 
+  cursor: pointer;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  /* margin-left: 3rem; 
+  margin-right: 3rem;  */
+  margin-left: 2rem;
+  box-shadow: 5px 5px 5px gray;
+  font-size: 20px;
+  position: relative;
+  transition: box-shadow 150ms ease-out;
+  user-select: none;
+  overflow: hidden;
+  width: 200px;
+}
+
+.update-prod:focus {
+  box-shadow: 0 0 0 8px rgba(white, 0.5);
+}
+
+.update-prod:hover{
+  border: #003366;
+  background-color: transparent;
+  color:#003366;
+  /* border-color: #003366; */
+  border-style: solid;
+
+}
+.delete-prod{
+
+    border: none;
+  background-color: #003366;
+  padding: 8px;
+  border-radius: 15px; 
+  cursor: pointer;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  /* margin-left: 3rem; 
+  margin-right: 3rem;  */
+  margin-left: 22rem;
+  /* margin-right: 1rem; */
+  box-shadow: 5px 5px 5px gray;
+  font-size: 20px;
+  position: relative;
+  transition: box-shadow 150ms ease-out;
+  user-select: none;
+  overflow: hidden;
+  width: 200px;
+}
+
+.delete-prod:focus {
+  box-shadow: 0 0 0 8px rgba(white, 0.5);
+}
+
+.delete-prod:hover{
+  border: #003366;
+  background-color: transparent;
+  color:#003366;
+  /* border-color: #003366; */
+  border-style: solid;
+
+}

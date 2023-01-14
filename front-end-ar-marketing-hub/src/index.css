@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Futura-light';
+  src: local("Futura-light"), url(./fonts/futura\ light\ bt.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Futura-bold';
+  src: local("Futura-bold"), url(./fonts/Futura\ Bold\ font.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Futura-medium';
+  src: local("Futura-medium"), url(./fonts/futura\ medium\ bt.ttf) format('truetype');
+}

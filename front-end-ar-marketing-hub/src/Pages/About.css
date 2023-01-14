@@ -1,0 +1,41 @@
+.marketing{
+    width: 700px;
+    height: 350px;
+    
+}
+
+
+.about-text{
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.Container1{
+    display: flex;
+    justify-content: center;
+    border-style: double;
+    width: 90%;
+    border-color: blue;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 5%;
+}
+.Container2{
+    display: flex;
+    justify-content: center;
+    border-style: double;
+    width: 90%;
+    border-color: blue;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.header{
+    margin-right: 50%;
+    
+}
+
