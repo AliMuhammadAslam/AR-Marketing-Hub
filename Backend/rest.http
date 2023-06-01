@@ -1,0 +1,211 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzM2NTUsImV4cCI6MTY2NzQ3Mzc3NSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.rrVD4s9URvjcOfcSQL__lc_8QBSWmaKSz4WUh3Ursp4
+
+###Login Route
+POST http://localhost:3500/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@email.com",
+    "password": "12345678"
+}
+
+
+###Register Route
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "admin@email.com",
+    "password": "12345678"
+}
+
+###Refresh token Route
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzM2NTUsImV4cCI6MTY5OTAzMTI1NSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.y7ijZ9tiQesYz4AN6uT2oyfJGnmMOKDZAR0Z706i9OU"
+}
+
+###Logout Route
+DELETE http://localhost:3000/auth/logout
+
+###Product Route
+GET  http://localhost:3000/auth/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzExNzUsImV4cCI6MTY2NzUxNDM3NSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.iS-0F0PQzdG_LtJ-egpoUXtcBxttDFO9az0A06Po6y0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzUwMDEsImV4cCI6MTY2NzQ3NTEyMSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.hVgqK-5pKn4nkVcsayJ_Z___HGRTe05zxfTiJ7Gvzco
+
+
+###Product Route
+POST  http://localhost:3000/auth/find_product/Product_Name
+Content-Type: application/json
+
+{
+    "Product_Name": "Samsung Galaxy Note 22"
+}
+
+
+###Product Route
+GET  http://localhost:3000/auth/product_details/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzExNzUsImV4cCI6MTY2NzUxNDM3NSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.iS-0F0PQzdG_LtJ-egpoUXtcBxttDFO9az0A06Po6y0
+
+
+###Product Route
+POST  http://localhost:3000/auth/add_product
+Content-Type: application/json
+
+//product:
+{
+    "Product_ID": 4,
+    "Product_Name": "Samsung Galaxy Note 22",
+    "Description": "good",
+    "Link": "https://www.samsung.com",
+    "Image": "imagesgpro.jpg",
+    "User_ID": 2
+}
+
+
+###Event Route
+GET  http://localhost:3000/auth/events
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzExNzUsImV4cCI6MTY2NzUxNDM3NSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.iS-0F0PQzdG_LtJ-egpoUXtcBxttDFO9az0A06Po6y0
+
+
+###Event Route
+POST  http://localhost:3500/auth/find_event/Food
+Content-Type: application/json
+
+
+###Event Route
+GET  http://localhost:3000/auth/event_details/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzExNzUsImV4cCI6MTY2NzUxNDM3NSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.iS-0F0PQzdG_LtJ-egpoUXtcBxttDFO9az0A06Po6y0
+
+
+###Event Route
+POST  http://localhost:3500/auth/add_event
+Content-Type: application/json
+
+{
+  "Event_ID": 6,
+  "Event_Name": "Atif Aslam Concert",
+  "Description": "A night filled with all your favorite songs.",
+  "Image": "https://i.ytimg.com/vi/XcqFpKgUTls/maxresdefault.jpg",
+  "User_ID": 2,
+  "Ticket_Price" : 2000,
+  "Delivery_Charge" : 250
+
+}
+###Ticket Route
+POST  http://localhost:3500/auth/add_ticket
+Content-Type: application/json
+
+{
+  "Event_ID": 1,
+  "Event_Name": "Lahore Eat",
+  "Description": "Food Festival",
+  "Image": "https://i0.wp.com/www.charcoalgravel.com/wp-content/uploads/2018/03/Lahore-Eat-1.jpg?fit=750%2C359&ssl=1&resize=1280%2C720",
+  "User_ID": 2,
+  "Quantity":2,
+  "Price":6000,
+  "Total"
+  
+}
+
+
+
+
+
+
+###Comment on Product Route
+POST  http://localhost:3000/auth/product_details/6333fb0268b3c3265e16ad5a/6363986d53f7cbca6f1a403f/comment
+Content-Type: application/json
+
+//product:
+{
+    "text" : "Best Galaxy product!!!"
+}
+
+
+###Comment on Event Route
+POST  http://localhost:3000/auth/event_details/6333fb0268b3c3265e16ad5a/635a444516f58f6d68f592a4/comment
+Content-Type: application/json
+
+//product:
+{
+    "text" : "So excited for this concert. Gonna be a great night."
+}
+
+
+### Get About Route
+GET  http://localhost:3500/auth/about
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzExNzUsImV4cCI6MTY2NzUxNDM3NSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.iS-0F0PQzdG_LtJ-egpoUXtcBxttDFO9az0A06Po6y0
+
+### Add About
+POST  http://localhost:3500/auth/addAbout
+Content-Type: application/json
+
+{
+    "title": "About",
+    "Image1": "https://svmsolutions.b-cdn.net/wp-content/uploads/2020/01/converting-about-us-page.jpg",
+    "Image2": "https://media.istockphoto.com/id/978975308/vector/upcoming-events-neon-signs-vector-upcoming-events-design-template-neon-sign-light-banner-neon.jpg?s=170667a&w=0&k=20&c=SkMtxe3H0G4My_1DqS0CS1uAHJR8NaozbytU0XLQyxo=",
+    "text1": "We have a legacy of producing legendary outreach.",
+    "text2": "These are the upcoming events."
+}
+
+###Get Home Route
+GET  http://localhost:3500/auth/home
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njc0NzExNzUsImV4cCI6MTY2NzUxNDM3NSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.iS-0F0PQzdG_LtJ-egpoUXtcBxttDFO9az0A06Po6y0
+
+###Add Home
+POST  http://localhost:3500/auth/addHome
+Content-Type: application/json
+
+{
+    "Image": "https://svmsolutions.b-cdn.net/wp-content/uploads/2020/01/converting-about-us-page.jpg",
+    "text": "Hi there! We are pleased to welcome you on board with AR Marketing Hub! You joined thousands of brands who are already skyrocketing their sales with AR by: [Benefit 1] [Benefit 2] [Benefit 3] There are just a few tiny steps you need to take to achieve all these amazing things: [Step 1] [Step 2] [Step 3]"
+}
+
+
+
+###Delete Product Route
+GET  http://localhost:3500/auth/delete_product/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzA3NDQ0MDUsImV4cCI6MTY3MDc4NzYwNSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.ZifDg-HEyXK5IZnG7XqwiL-ajOwbMKnVpMfsM0Xs0sU
+
+
+###Delete Event Route
+GET  http://localhost:3500  
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzA3NDQ0MDUsImV4cCI6MTY3MDc4NzYwNSwiYXVkIjoiNjMzM2ZiMDI2OGIzYzMyNjVlMTZhZDVhIiwiaXNzIjoiYXJtYXJrZXRpbmdodWIuY29tIn0.ZifDg-HEyXK5IZnG7XqwiL-ajOwbMKnVpMfsM0Xs0sU
+
+
+###Update Product
+POST  http://localhost:3500/auth/update_product/7
+Content-Type: application/json
+
+{
+    "name": "Twin Burger",
+    "desc": "juiciest burger ever",
+    "link": "www.facebook.com",
+    "image": "https://images.squarespace-cdn.com/content/v1/5592d119e4b0d9a22792d26f/1586823182121-EBV5WDS8N1KROMB7C78U/JuiCy+Burger.jpeg?format=1000w"
+}
+###Update User
+POST  http://localhost:3500/auth/update_profile/6395f0e445c1ce22b5399a54
+Content-Type: application/json
+
+{
+    "name": "Twin Burger",
+    "contact": "03347890877",
+    "address": "36 Stree IBA Main Campus"
+    
+}
+
+
+###Update Event
+POST  http://localhost:3500/auth/update_event/5
+Content-Type: application/json
+
+{
+    "name": "Party",
+    "desc": "party night full of fun!",
+    "location": "Lahore"
+    //"image": "yes.jpg"
+}
